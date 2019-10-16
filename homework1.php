@@ -117,8 +117,77 @@ if($a > $b){
 
 ?>
 
+<hr>
 
+<h5>No.9 2019/10/16↓</h5>
+<?php
 
+$color = array('white', 'green', 'red', 'blue', 'black');
+echo "The memory of that scene for me is like a frame of film forever frozen at that moment: the ".$color[2]." carpet, the ".$color[1]." lawn, the ".$color[0]." house, the leaden sky. The new president and his first lady. - Richard M. Nixon"
+
+?>
+
+<hr>
+
+<h5>No.10</h5>
+<?php
+
+$color = array(4 => 'white', 6 => 'green', 11=> 'red');
+echo reset($color);
+
+?>
+
+<hr>
+
+<h5>No.11</h5>
+<?php
+
+$ceu = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels", "Denmark"=>"Copenhagen", "Finland"=>"Helsinki", "France" => "Paris", "Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana", "Germany" => "Berlin", "Greece" => "Athens", "Ireland"=>"Dublin", "Netherlands"=>"Amsterdam", "Portugal"=>"Lisbon", "Spain"=>"Madrid", "Sweden"=>"Stockholm", "United Kingdom"=>"London", "Cyprus"=>"Nicosia", "Lithuania"=>"Vilnius", "Czech Republic"=>"Prague", "Estonia"=>"Tallin", "Hungary"=>"Budapest", "Latvia"=>"Riga", "Malta"=>"Valetta", "Austria" => "Vienna", "Poland"=>"Warsaw") ;
+
+foreach($ceu as $con => $cap){
+    echo "The capital of ".$con." is ".$cap."<br>";
+}
+?>
+
+<hr>
+
+<h5>No.12</h5>
+
+<?php
+
+$age = array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40");
+
+echo " a) ascending order sort by value";
+
+ksort($age);
+echo "<pre>";
+print_r($age);
+echo "</php>";
+
+echo " b) ascending order sort by Key";
+
+asort($age);
+echo "<pre>";
+print_r($age);
+echo "</php>";
+
+echo "c) descending order sorting by Value";
+
+krsort($age);
+echo "<pre>";
+print_r($age);
+echo "</pre>";
+
+echo " d) descending order sorting by Key";
+
+arsort($age);
+echo "<pre>";
+print_r($age);
+echo "</pre>";
+
+?>
+
+<hr>
 
 
 
