@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin: auto 0;
+}
+
+.navbar{
+    background-color: #3b5998;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.img{
+   width: 100%;
+}
+
+header > h1{
+    font-weight: bold;
+}
+
+.job{
+    float: left;
+}
+
+#signin{
+    border: 1px solid white;
+    background-color: skyblue;
+    /* position: relative; top: 24px; */
+}
+
+.main{
+    background-color: #DEE3EE;
+}
+
+
+
+#birth{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+#signup{
+    background-color: #67A253;
+    color: white;
+    width: 30%;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 959px){
+
+
+    .img{
+        width: 90vw;
+    } 
+    
+    .forms{
+        width: 90vw;
+     } 
+     
+
+    .wrapper{
+        width: 100vw;
+    }
+
+    #signup{
+        width: 90vw;
+    }
+}
+
+
+
+
