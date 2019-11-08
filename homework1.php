@@ -10,11 +10,13 @@
 <h5>No.1</h5>
 <?php
 
-$var ='<h3>PHP Tutorial</h3>
-PHP, an acronym for Hypertext Preprocessor, is a widely-used open source general-purpose scripting language. It is a cross-platform, HTML embedded server-side scripting language and is especially suited for web development.
-Go to the PHP Tutorial.
-';
-echo "$var";
+$var = 'PHP Tutorial';
+
+echo "<h3> $var </h3>";
+
+echo "<p>PHP, an acronym for Hypertext Preprocessor, is a widely-used open source general-purpose scripting language. It is a cross-platform, HTML embedded server-side scripting language and is especially suited for web development.</p>";
+
+echo "<a href='#'>Go to the PHP Tutorial</a>";
 
 ?>
 
@@ -82,6 +84,8 @@ if($z % 2 == 0){
     echo "Odd";
 }
 
+echo ($z % 2 ==0)?"Even" : "Odd";
+
 ?>
 <hr>
 <h5>No.7</h5>
@@ -94,6 +98,7 @@ $fuel = 21;
   echo "<br>";
   echo $fuel > 30? "$fuel is greater than 30 ":"$fuel is smaller than 10";
   echo "<br>";
+
 
 ?>
 
@@ -159,28 +164,28 @@ $age = array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40");
 
 echo " a) ascending order sort by value";
 
-ksort($age);
+asort($age);
 echo "<pre>";
 print_r($age);
 echo "</php>";
 
 echo " b) ascending order sort by Key";
 
-asort($age);
+ksort($age);
 echo "<pre>";
 print_r($age);
 echo "</php>";
 
 echo "c) descending order sorting by Value";
 
-krsort($age);
+arsort($age);
 echo "<pre>";
 print_r($age);
 echo "</pre>";
 
 echo " d) descending order sorting by Key";
 
-arsort($age);
+krsort($age);
 echo "<pre>";
 print_r($age);
 echo "</pre>";
@@ -189,7 +194,9 @@ echo "</pre>";
 
 <hr>
 
-
+<h3>No.13</h3>
+<p>Write a PHP script to get the PHP version and configuration infomation</p>
+<?php echo phpinfo(); ?>
 
 </body>
 </html>
